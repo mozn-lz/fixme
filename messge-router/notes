@@ -1,3 +1,21 @@
+create a server
+	https://www.youtube.com/watch?v=3YFhDjYLErQ&list=PLE2vW4kTRjCAZ9QkpDehDLs_x6eFfTeOE&index=10
+
+	listen to ports
+	Process Multiple requsts
+		https://docs.oracle.com/javase/tutorial/networking/sockets/clientServer.html
+
+
+FIX format (Financial Information eXchange)
+	https://www.youtube.com/watch?v=HBtyQTVVfZ0
+
+checkshum validation
+create the routing table | DB/text
+send messages | ports
+
+
+https://docs.oracle.com/javase/7/docs/api/java/util/zip/Checksum.html
+
 The router is the central component of your applications. 
 All other components connect to it in order to send messages to other components. 
 The router will perform no buiness logic, it will just dispatch messages to the destination component(s). 
