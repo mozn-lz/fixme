@@ -1,5 +1,9 @@
 package za.wethinkcode.fixme;
 
+import java.io.IOException;
+import java.net.ServerSocket;
+import java.net.Socket;
+
 public class Server {
 	
 	private	ServerSocket socket;
@@ -22,7 +26,7 @@ public class Server {
 				while (running) {
 					try {
 						Socket client = socket.accept();
-						
+						System.out.println("Client has been found: " + client + ":" + port);
 					} catch (IOException e) {
 						e.printStackTrace();
 					}
