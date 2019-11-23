@@ -1,6 +1,7 @@
 package za.wethinkcode.fixme;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 /**
  * Hello world!
@@ -16,23 +17,28 @@ public class App
 		* market 5001
 		*/
 		
+		Scanner in = new Scanner(System.in);
+		
+		System.out.println("Binding ports\n");
 		Server broker_server = new Server(5000);
 		Server market_server = new Server(5001);
 
-		switch (message) {
-			case value:break;
-			case value:break;
-			case value:break;
-			case value:break;
+		broker_server.startServer();
+		market_server.startServer();
+
 		
-			default:
-				break;
-		}
+		String cmd  = in.nextLine();
+	if (cmd == "qbs") {
+		broker_server.stopServer();
+	}
+	if (cmd == "qms") {
+		market_server.stopServer();
+	}
 	}
 
 	public void registerEntity(String type) {
 		if (type == "market") {
-			createMarket()
+			createMarket();
 		} else if (type == "broker") {
 			createBroker();
 		}

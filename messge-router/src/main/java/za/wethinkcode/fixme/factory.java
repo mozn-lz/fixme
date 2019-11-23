@@ -1,9 +1,7 @@
 package za.wethinkcode.fixme;
 
-public class Factory 
-{
-    publicvoid Factory(  )
-    {
+public class factory {
+    public factory() {
         System.out.println( "Hello World!" );
     }
 }
